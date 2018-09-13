@@ -1,0 +1,266 @@
+@import url(base.css);
+.screen{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}   
+/* 上部界面 */
+.scr_top{
+    width: 100%;
+    height: 8.88rem;
+    background: url(../image/scen.png) no-repeat center;
+    background-size: 7.5rem 8.89rem;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+.scr_top .l_d{
+    width:0.53rem;
+    height:0.77rem;
+    background-size: 0.53rem 0.77rem;
+    /* background-image: url(../image/A_Z/A.png); */
+    position: absolute;
+    z-index: 20;
+}
+        /* 声音 */
+.scr_top .aplay{
+    width: 0.58rem;
+    height: 0.58rem;
+    position: absolute;
+    top: 0.58rem;
+    right: 0.2rem;
+}
+.scr_top .aplay img{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0.04rem 0.04rem;
+}
+        /* 静音 */
+.scr_top .apause{
+    width: 0.58rem;
+    height: 0.58rem;
+    position: absolute;
+    top: 0.58rem;
+    right: 0.2rem;
+    display: none;
+}
+.scr_top .apause img{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0.04rem 0.04rem;
+}
+        /* 生命值 */
+.scr_top .health{
+    width: 1.24rem;
+    height: 1.24rem;
+    position: absolute;
+    right: 0.24rem;
+    top: 3.23rem;
+}
+.scr_top .health img{
+    width: 1.24rem;
+    height: 1.24rem;
+}
+.scr_top .health .h_num{
+    width: 0.8rem;
+    height: 0.4rem;
+    font-size: 0.32rem;
+    font-weight: 600;
+    line-height: 0.4rem;
+    text-align: center;
+    background-color: aqua;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.22rem;
+}
+        /* 积分值 */
+.scr_top .point{
+    width: 1.24rem;
+    height: 1.24rem;
+    position: absolute;
+    right: 0.24rem;
+    top: 4.60rem;
+}
+.scr_top .point img{
+    width: 1.24rem;
+    height: 1.24rem;
+}
+.scr_top .point .p_num{
+    width: 0.8rem;
+    height: 0.4rem;
+    font-size: 0.32rem;
+    font-weight: 600;
+    line-height: 0.4rem;
+    text-align: center;
+    background-color: aqua;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.22rem;
+}
+        /* 暂停 */
+.scr_top .pause{
+    width: 1.24rem;
+    height: 1.24rem;
+    position: absolute;
+    right: 0.24rem;
+    top: 6.22rem;
+    z-index: 0;
+}
+.scr_top .pause img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.pauseBox{
+    width: 100%;
+    height: 13.34rem;
+    background-color: rgba(126, 126, 126, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    display: none;
+}
+.pauseBox .play_B{
+    width: 4.3rem;
+    height: 3rem;
+    border-radius: 0.1rem;
+    margin: 3rem auto;
+}
+.pauseBox .play_B .continue{
+    font-size: 0.46rem;
+    font-family: "苹方";
+    width: 2.6rem;
+    height: 1rem;
+    background-image: -webkit-linear-gradient(top,rgb(250, 149, 33),rgb(225, 225, 252));
+    border-radius: 0.1rem;
+    margin-top: 1rem;
+    margin-left: 0.85rem;
+    border:none;
+
+}
+        /* 开始 */
+.scr_top .play{
+    width: 1.24rem;
+    height: 1.24rem;
+    position: absolute;
+    right: 0.24rem;
+    top: 6.22rem;
+    z-index: 0;
+}
+.scr_top .play img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+/* 键盘部分 */
+.scr_bottom{
+    width: 100%;
+    height: 4.44rem;    
+    background: url(../image/Key.png) no-repeat center;
+    background-size: 7.5rem 4.44rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg_c{
+    width: 7.02rem;
+    height: 4rem;
+    background-color: rgba(201, 101, 231, 0.7);
+    border-radius: 5px;
+}
+.bg_c .keyBoard{
+    width: 7.02rem;
+    height: 4rem;
+    border-radius: 5px;
+    margin: 0.25rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.bg_c .keyBoard li{
+    width: 0.5rem;
+    height: 0.8rem;
+    margin: 0 0.1rem;
+}
+.bg_c .keyBoard li:nth-child(11){
+    margin-left: 0.2rem;
+}
+.bg_c .keyBoard li .k_list{
+    width: 0.6rem;
+    height: 0.9rem;
+    background: url(../image/Letter.png) no-repeat center;
+    background-size: 0.6rem 0.9rem;
+    font-size: 0.38rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 0.8rem;
+}
+/* 弹框 游戏结束 */
+.alertBox{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: none;
+}
+.alertBox .over{
+    width: 4.3rem;
+    height: 4.49rem;
+    background: url(../image/gameover.png);
+    background-size: 4.3rem 4.49rem;
+    margin: 1.5rem auto;
+    position: relative;
+}
+.alertBox .over .e_point{
+    width: 0.7rem;
+    height: 0.4rem;
+    font-size: 0.36rem;
+    font-weight: 600;
+    position: absolute;
+    top: 2.78rem;
+    left: 2.1rem;
+}
+.alertBox .r_btn{
+    width: 2.63rem;
+    height: 0.6rem;
+    border-radius: 0.1rem;
+    font-size: 0.32rem;
+    font-weight: 600;
+    font-family: "苹方";
+    color: aliceblue;
+    background-image: -webkit-linear-gradient(top,rgb(255, 68, 0),rgb(255, 139, 97));
+    background-image: -moz-linear-gradient(top,rgb(255, 68, 0),rgb(255, 139, 97));
+    background-image: -ms-linear-gradient(top,rgb(255, 68, 0),rgb(255, 139, 97));
+    background-image: -o-linear-gradient(top,rgb(255, 68, 0),rgb(255, 139, 97));
+    background-image: linear-gradient(top,rgb(255, 68, 0),rgb(255, 139, 97));
+    position: absolute;
+    top: 3.4rem;
+    left: 0.85rem;
+    border: none;    
+}
+.clound{
+    width: 4.95rem;
+    height: 0.56rem;
+    background: url(../image/clound_06.png);
+    background-size: 4.95rem 0.56rem;
+    position: absolute;
+    top: 1.1rem;
+    left: 0rem;
+    animation: float 4s linear infinite;
+}
+@keyframes float {
+    from{
+        left: 0;
+    }
+    50%{
+        left: 2.5rem;
+    }
+}

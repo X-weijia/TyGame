@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="screen">
+    <!-- 上部界面 -->
+    <section class="scr_top">
+        <!-- 声音部分 -->
+        <div class="aplay">
+            <img src="image/Aplay.png" alt="">
+            <audio autoplay loop src="bgMusic.mp3"></audio>
+        </div>
+        <div class="apause">
+                <img src="image/Apause.png" alt="">
+        </div>
+        <!-- 生命值 -->
+        <div class="health">
+            <img src="image/Health.png" alt="">
+            <div class="h_num" id="smbox">10</div>
+        </div>
+        <!-- 积分值 -->
+        <div class="point">
+            <img src="image/Point.png" alt="">
+            <div class="p_num" id="fenbox">0</div>
+        </div>
+        <!-- 暂停 -->
+        <div class="pause" style="z-index:10;">
+            <img src="image/Pause.png" alt="">
+        </div>
+        <div class="pauseBox">
+            <div class="play_B">
+                <button class="continue">继续游戏</button>
+            </div>
+        </div>
+        <!-- 开始 -->
+        <div class="play">
+            <img src="image/Play.png" alt="">
+        </div>
+    </section>
+    <!-- 键盘部分 -->
+    <section class="scr_bottom">
+        <div class="bg_c">
+            <ul class="keyBoard">
+                <li><div class="k_list">Q</div></li>
+                <li><div class="k_list">W</div></li>
+                <li><div class="k_list">E</div></li>
+                <li><div class="k_list">R</div></li>
+                <li><div class="k_list">T</div></li>
+                <li><div class="k_list">Y</div></li>
+                <li><div class="k_list">U</div></li>
+                <li><div class="k_list">I</div></li>
+                <li><div class="k_list">O</div></li>
+                <li><div class="k_list">P</div></li>
+                <li><div class="k_list">A</div></li>
+                <li><div class="k_list">S</div></li>
+                <li><div class="k_list">D</div></li>
+                <li><div class="k_list">F</div></li>
+                <li><div class="k_list">G</div></li>
+                <li><div class="k_list">H</div></li>
+                <li><div class="k_list">J</div></li>
+                <li><div class="k_list">K</div></li>
+                <li><div class="k_list">L</div></li>
+                <li><div class="k_list">Z</div></li>
+                <li><div class="k_list">X</div></li>
+                <li><div class="k_list">C</div></li>
+                <li><div class="k_list">V</div></li>
+                <li><div class="k_list">B</div></li>
+                <li><div class="k_list">N</div></li>
+                <li><div class="k_list">M</div></li>
+            </ul>
+        </div>
+    </section>
+    <!-- 游戏结束 -->
+                <!-- 云 -->
+    <div class="clound"></div>
+    <div class="alertBox">
+        <div class="over">
+            <div class="e_point">100</div>
+            <button class="r_btn"><a href="" style="color:#000;">重新开始</a></button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/rem.js"></script>
+<script src="js/index.js"></script>
+<script src="js/game.js"></script>
+<script src="js/animate.js"></script>
+</html>
